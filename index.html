@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Modern Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="homePage">
+        <nav class="navbar">
+            <div class="logo-container">
+               <img src="https://cdn-icons-png.flaticon.com/512/7164/7164309.png" alt="Logo">
+               <span class="site-name">PrimeVest</span>
+          </div>
+        
+            <ul class="nav-links">
+                <li><a href="#homePage">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#" id="navLogin">Contact</a></li>
+            </ul>
+
+            <div class="menu-toggle1"><i class="fa-solid fa-user"></i></div>
+            <div class="menu-toggle">=</div>
+
+        </nav>
+
+        <div class="login-container" id="loginBox">
+            <form class="login-form" id="loginForm">
+                <span class="close-btn" id="closeLogin">&times;</span>
+                <h2>Welcome Back</h2>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email">
+                <small id="emailError" class="error"></small>
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password">
+                <small id="passwordError" class="error"></small>
+                <label for="Fname">First Name</label>
+                <input type="text" id="Fname" placeholder="Enter your first name">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" placeholder="Enter your last name">
+                <label for="number">Phone Number</label>
+                <input type="text" id="number" placeholder="Enter your phone number">
+                <label for="country">Select Country:</label>
+                <select name="country" id="country">
+                    <option value="Nigeria">Nigeria</option>
+                    <option value="Ghana">Ghana</option>
+                    <option value="South-Africa">South Africa</option>
+                    <option value="AF">Afghanistan</option>
+                    <option value="AL">Albania</option>
+                    <option value="DZ">Algeria</option>
+                    <option value="AS">American Samoa</option>
+                    <option value="AD">Andorra</option>
+                    <option value="AO">Angola</option>
+                    <option value="AI">Anguilla</option>
+                    <option value="AQ">Antarctica</option>
+                    <option value="AG">Antigua and Barbuda</option>
+                    <option value="AR">Argentina</option>
+                    <option value="AM">Armenia</option>
+                    <option value="AW">Aruba</option>
+                    <option value="AU">Australia</option>
+                    <option value="AT">Austria</option>
+                    <option value="AZ">Azerbaijan</option>
+                    <option value="BS">Bahamas</option>
+                    <option value="BH">Bahrain</option>
+                    <option value="BD">Bangladesh</option>
+                    <option value="BB">Barbados</option>
+                    <option value="BY">Belarus</option>
+                    <option value="BE">Belgium</option>
+                    <option value="BZ">Belize</option>
+                    <option value="BJ">Benin</option>
+                    <option value="BM">Bermuda</option>
+                    <option value="BT">Bhutan</option>
+                    <option value="BO">Bolivia</option>
+                    <option value="BA">Bosnia and Herzegovina</option>
+                    <option value="BW">Botswana</option>
+                    <option value="BV">Bouvet Island</option>
+                    <option value="BR">Brazil</option>
+                    <option value="IO">British Indian Ocean Territory</option>
+                    <option value="BN">Brunei Darussalam</option>
+                    <option value="BG">Bulgaria</option>
+                    <option value="BF">Burkina Faso</option>
+                    <option value="BI">Burundi</option>
+                    <option value="KH">Cambodia</option>
+                    <option value="CM">Cameroon</option>
+                    <option value="CA">Canada</option>
+                    <option value="CV">Cape Verde</option>
+                    <option value="KY">Cayman Islands</option>
+                    <option value="CF">Central African Republic</option>
+                    <option value="TD">Chad</option>
+                    <option value="CL">Chile</option>
+                    <option value="CN">China</option>
+                    <option value="CO">Colombia</option>
+                    <option value="KM">Comoros</option>
+                    <option value="CG">Congo</option>
+                    <option value="CD">Congo, the Democratic Republic of the</option>
+                    <option value="CK">Cook Islands</option>
+                    <option value="CR">Costa Rica</option>
+                    <option value="CI">Cote D'Ivoire</option>
+                    <option value="HR">Croatia</option>
+                    <option value="CU">Cuba</option>
+                    <option value="CY">Cyprus</option>
+                    <option value="CZ">Czech Republic</option>
+                    <option value="DK">Denmark</option>
+                    <option value="DJ">Djibouti</option>
+                    <option value="DM">Dominica</option>
+                    <option value="DO">Dominican Republic</option>
+                    <option value="EC">Ecuador</option>
+                    <option value="EG">Egypt</option>
+                    <option value="SV">El Salvador</option>
+                    <option value="GQ">Equatorial Guinea</option>
+                    <option value="ER">Eritrea</option>
+                    <option value="EE">Estonia</option>
+                    <option value="ET">Ethiopia</option>
+                    <option value="FK">Falkland Islands (Malvinas)</option>
+                    <option value="FO">Faroe Islands</option>
+                    <option value="FJ">Fiji</option>
+                    <option value="FI">Finland</option>
+                    <option value="FR">France</option>
+                    <option value="GF">French Guiana</option>
+                    <option value="PF">French Polynesia</option>
+                    <option value="TF">French Southern Territories</option>
+                    <option value="GA">Gabon</option>
+                    <option value="GM">Gambia</option>
+                    <option value="GE">Georgia</option>
+                    <option value="DE">Germany</option>
+                    <option value="GH">Ghana</option>
+                    <option value="GI">Gibraltar</option>
+                    <option value="GR">Greece</option>
+                    <option value="GL">Greenland</option>
+                    <option value="GD">Grenada</option>
+                    <option value="GP">Guadeloupe</option>
+                    <option value="GU">Guam</option>
+                    <option value="GT">Guatemala</option>
+                    <option value="GN">Guinea</option>
+                    <option value="GW">Guinea-Bissau</option>
+                    <option value="GY">Guyana</option>
+                    <option value="HT">Haiti</option>
+                    <option value="HM">Heard Island and McDonald Islands</option>
+                    <option value="VA">Holy See (Vatican City State)</option>
+                    <option value="HN">Honduras</option>
+                    <option value="HK">Hong Kong</option>
+                    <option value="HU">Hungary</option>
+                    <option value="IS">Iceland</option>
+                    <option value="IN">India</option>
+                    <option value="ID">Indonesia</option>
+                    <option value="IR">Iran, Islamic Republic of</option>
+                    <option value="IQ">Iraq</option>
+                    <option value="IE">Ireland</option>
+                    <option value="IL">Israel</option>
+                    <option value="IT">Italy</option>
+                    <option value="JM">Jamaica</option>
+                    <option value="JP">Japan</option>
+                    <option value="JO">Jordan</option>
+                    <option value="KZ">Kazakhstan</option>
+                    <option value="KE">Kenya</option>
+                    <option value="KI">Kiribati</option>
+                    <option value="KP">Korea, Democratic People's Republic of</option>
+                    <option value="KR">Korea, Republic of</option>
+                    <option value="KW">Kuwait</option>
+                    <option value="KG">Kyrgyzstan</option>
+                    <option value="LA">Lao People's Democratic Republic</option>
+                    <option value="LV">Latvia</option>
+                    <option value="LB">Lebanon</option>
+                    <option value="LS">Lesotho</option>
+                    <option value="LR">Liberia</option>
+                    <option value="LY">Libyan Arab Jamahiriya</option>
+                    <option value="LI">Liechtenstein</option>
+                    <option value="LT">Lithuania</option>
+                    <option value="LU">Luxembourg</option>
+                    <option value="MO">Macao</option>
+                    <option value="MK">Macedonia, the Former Yugoslav Republic of</option>
+                    <option value="MG">Madagascar</option>
+                    <option value="MW">Malawi</option>
+                    <option value="MY">Malaysia</option>
+                    <option value="MV">Maldives</option>
+                    <option value="ML">Mali</option>
+                    <option value="MT">Malta</option>
+                    <option value="MH">Marshall Islands</option>
+                    <option value="MQ">Martinique</option>
+                    <option value="MR">Mauritania</option>
+                    <option value="MU">Mauritius</option>
+                    <option value="YT">Mayotte</option>
+                    <option value="MX">Mexico</option>
+                    <option value="FM">Micronesia, Federated States of</option>
+                    <option value="MD">Moldova, Republic of</option>
+                    <option value="MC">Monaco</option>
+                    <option value="MN">Mongolia</option>
+                    <option value="MS">Montserrat</option>
+                    <option value="MA">Morocco</option>
+                    <option value="MZ">Mozambique</option>
+                    <option value="MM">Myanmar</option>
+                    <option value="NA">Namibia</option>
+                    <option value="NR">Nauru</option>
+                    <option value="NP">Nepal</option>
+                    <option value="NL">Netherlands</option>
+                    <option value="AN">Netherlands Antilles</option>
+                    <option value="NC">New Caledonia</option>
+                    <option value="NZ">New Zealand</option>
+                    <option value="NI">Nicaragua</option>
+                    <option value="NE">Niger</option>
+                    <option value="NG">Nigeria</option>
+                    <option value="NU">Niue</option>
+                    <option value="NF">Norfolk Island</option>
+                    <option value="MP">Northern Mariana Islands</option>
+                    <option value="NO">Norway</option>
+                    <option value="OM">Oman</option>
+                    <option value="PK">Pakistan</option>
+                    <option value="PW">Palau</option>
+                    <option value="PS">Palestinian Territory, Occupied</option>
+                    <option value="PA">Panama</option>
+                    <option value="PG">Papua New Guinea</option>
+                    <option value="PY">Paraguay</option>
+                    <option value="PE">Peru</option>
+                    <option value="PH">Philippines</option>
+                    <option value="PN">Pitcairn</option>
+                    <option value="PL">Poland</option>
+                    <option value="PT">Portugal</option>
+                    <option value="PR">Puerto Rico</option>
+                    <option value="QA">Qatar</option>
+                    <option value="RE">Reunion</option>
+                    <option value="RO">Romania</option>
+                    <option value="RU">Russian Federation</option>
+                    <option value="RW">Rwanda</option>
+                    <option value="SH">Saint Helena</option>
+                    <option value="KN">Saint Kitts and Nevis</option>
+                    <option value="LC">Saint Lucia</option>
+                    <option value="PM">Saint Pierre and Miquelon</option>
+                    <option value="VC">Saint Vincent and the Grenadines</option>
+                    <option value="WS">Samoa</option>
+                    <option value="SM">San Marino</option>
+                    <option value="ST">Sao Tome and Principe</option>
+                    <option value="SA">Saudi Arabia</option>
+                    <option value="SN">Senegal</option>
+                    <option value="RS">Serbia</option>
+                    <option value="SC">Seychelles</option>
+                    <option value="SL">Sierra Leone</option>
+                    <option value="SG">Singapore</option>
+                    <option value="SK">Slovakia</option>
+                    <option value="SI">Slovenia</option>
+                    <option value="SB">Solomon Islands</option>
+                    <option value="SO">Somalia</option>
+                    <option value="ZA">South Africa</option>
+                    <option value="GS">South Georgia and the South Sandwich Islands</option>
+                    <option value="ES">Spain</option>
+                    <option value="LK">Sri Lanka</option>
+                    <option value="SD">Sudan</option>
+                    <option value="SR">Suriname</option>
+                    <option value="SJ">Svalbard and Jan Mayen</option>
+                    <option value="SZ">Swaziland</option>
+                    <option value="SE">Sweden</option>
+                    <option value="CH">Switzerland</option>
+                    <option value="SY">Syrian Arab Republic</option>
+                    <option value="TW">Taiwan</option>
+                    <option value="TJ">Tajikistan</option>
+                    <option value="TZ">Tanzania, United Republic of</option>
+                    <option value="TH">Thailand</option>
+                    <option value="TL">Timor-Leste</option>
+                    <option value="TG">Togo</option>
+                    <option value="TK">Tokelau</option>
+                    <option value="TO">Tonga</option>
+                    <option value="TT">Trinidad and Tobago</option>
+                    <option value="TN">Tunisia</option>
+                    <option value="TR">Turkey</option>
+                    <option value="TM">Turkmenistan</option>
+                    <option value="TC">Turks and Caicos Islands</option>
+                    <option value="TV">Tuvalu</option>
+                    <option value="UG">Uganda</option>
+                    <option value="UA">Ukraine</option>
+                    <option value="AE">United Arab Emirates</option>
+                    <option value="GB">United Kingdom</option>
+                    <option value="US">United States</option>
+                    <option value="UY">Uruguay</option>
+                    <option value="UZ">Uzbekistan</option>
+                    <option value="VU">Vanuatu</option>
+                    <option value="VE">Venezuela</option>
+                    <option value="VN">Viet Nam</option>
+                    <option value="VG">Virgin Islands, British</option>
+                    <option value="VI">Virgin Islands, U.S.</option>
+                    <option value="WF">Wallis and Futuna</option>
+                    <option value="EH">Western Sahara</option>
+                    <option value="YE">Yemen</option>
+                    <option value="ZM">Zambia</option>
+                    <option value="ZW">Zimbabwe</option>
+                </select>
+                <input type="checkbox" id="terms">
+                <label for="terms">I agree to the terms and conditions</label>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Invest in the future of Finance</h1>
+                <h2>Start your journey today and watch your digital assests mutiply with our advanced investment strategies.</h2>
+                <button class="btn" id="openLogin">SIGN UP</button>
+        
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Crypto Investment" style="width:100%; max-height:400px; object-fit:cover; border-radius:8px; margin:20px 0;">
+            </div>
+        </section>
+
+       <section class="features" id="features">
+           <div class="cards">
+                <div class="card">
+                    <i class="fa-regular fa-building"></i>
+                    <h3>Legal Comapany</h3>
+                    <p> our company conducts absolutely legal activties on the legal field. we are certified to operate invesment business , we are legal and safe </p>
+                </div>
+
+               <div class="card">
+                    <i class="fa-solid fa-money-bill-trend-up"></i>
+                    <h3>Quick withdrawal</h3>
+                    <p>Our platform allows for quick and seamless transactions with minimal delays.</p>
+               </div>
+
+               <div class="card">
+                   <i class="fa-solid fa-arrows-down-to-people"></i>
+                   <h3>Referral Program</h3>
+                   <p>We are offering a certain percentage of referral bonuses for every successful referral. you can increase your income by simply refer a few people</p>
+               </div>
+
+               <div class="card">
+                  <i class="fa-solid fa-headset"></i>
+                  <h3>24/7 Support</h3>
+                  <p> We provide 24/7 support to ensure you always have assistance when you need it. Our dedicated support team is available around the clock to assist you with any questions or concerns. </p>
+               </div>
+
+               <div class="card">
+                    <i class="fa-solid fa-handshake"></i>
+                    <h3>DDOS Protection</h3>
+                    <p>Our platform is equipped with advanced DDOS protection measures to ensure the safety and stability of your investments.</p>
+               </div>
+
+                <div class="card">
+                  <i class="fa-solid fa-bolt"></i>
+                  <h3>Fast</h3>
+                  <p>Our site is designed to be fast and efficient, ensuring smooth performance.</p>
+                </div>
+
+                <div class="card">
+                  <i class="fa-solid fa-shield-halved"></i>
+                  <h3>Reliable</h3>
+                  <p>Our site is designed to be reliable and trustworthy with 99.9% uptime.</p>
+                </div>
+
+                <div class="card">
+                 <i class="fa-solid fa-face-smile"></i>
+                 <h3>User-Friendly</h3>
+                 <p>Designed to be user-friendly and easy to navigate for everyone.</p>
+                </div>
+
+            </div>
+        </section>
+        
+        <section class="investments" id="investments">
+            <div class="investment-plan">
+                <div class="plan">
+                  <h2>Investment <span class="blue">Plans</span></h2>
+                  <P> To make a solid investment, we offer various plans tailored to your financial goals. find a plan which is best for you</P>
+                </div>
+
+                <div class="plans">
+                    <h3>GOLD PLAN</h3>
+                    <p>Return 35%</p>
+                    <P>Every Day</P>
+                    <p>For lifetime</p>
+                    <p> Lifetime Earning</p>
+                    <p>$10000-$1000000</p>
+                    <button class="btn">invest now</button>
+                </div>
+                
+                <div class="plans">
+                    <h3>ADVANCED PLAN</h3>
+                    <p>Return 25%</p>
+                    <P>Every two Days</P>
+                    <p>For lifetime</p>
+                    <p> Lifetime Earning</p>
+                    <p>$50000-$9999</p>
+                    <button class="btn">invest now</button>
+                </div>
+
+                <div class="plans">
+                    <h3>BASIC PLAN</h3>
+                    <p>Return 15%</p>
+                    <P>Every Two Days</P>
+                    <p>For lifetime</p>
+                    <p> Lifetime Earning</p>
+                    <p>$800-$4999</p>
+                    <button class="btn">invest now</button>
+                </div>
+        
+                <div class="plans">
+                    <h3>STARTER PLAN</h3>
+                    <p>Return 7%</p>
+                    <P>Every Day</P>
+                    <p>For lifetime</p>
+                    <p> Lifetime Earning</p>
+                    <p>$50-$799</p>
+                    <button class="btn">invest now</button>
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+
+        <section class="about" id="about">
+            <div class="about-image">
+               <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="About us">
+            </div>
+            <div class="about-text">
+              <h2>About Us</h2>
+              <p>We build clean and modern websites with amazing user experiences. Our goal is to help you create beautiful digital products that stand out.</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 My Site | Built with HTML, CSS, and JavaScript</p>
+    </footer>
+
+    <script>
+        const openBtn = document.getElementById("openLogin");
+        const loginBox = document.getElementById("loginBox");
+        const closeBtn = document.getElementById("closeLogin");
+        const toggel = document.querySelector(".menu-toggle");
+        const navlinks = document.querySelector(".nav-links");
+        const form = document.getElementById("loginForm");
+
+        openBtn.onclick = () => {
+            loginBox.style.display = "flex";
+            loginBox.style.animation = "fadeIn 0.5s ease forwards";
+        }
+        closeBtn.onclick = () => {
+            loginBox.style.display = "none";
+        }
+
+        toggel.onclick = () => {
+            navlinks.classList.toggle("active");
+        }
+        window.onload = function() {
+            const colorBtn = document.getElementById('colorBtn');
+            const heading = document.querySelector('.hero-text h1');
+
+            if(colorBtn && heading) {
+                const colors = ['#00bcd4', '#ff6b6b', '#4ecdc4', '#ffe066', '#ff9ff3'];
+
+                colorBtn.addEventListener('click', function() {
+                    const randomColor = colors[Math.floor(Math.random() * colors.length)];
+                    heading.style.color = randomColor;
+                    this.style.background = randomColor;
+                    
+                    // Button animation
+                    this.style.transform = "scale(1.2)";
+                    this.style.transition = "transform 0.2s ease";
+                    setTimeout(() => {
+                        this.style.transform = "scale(1)";
+                    }, 200);
+
+                    console.log("Color changed to: " + randomColor);
+                });
+            }
+        }
+
+        form.addEventListener("submit", function (e) {
+            e.preventDefault();
+            let email = document.getElementById("email");
+            let password = document.getElementById("password");
+            let emailError = document.getElementById("emailError");
+            let passwordError = document.getElementById("passwordError");
+            let valid = true;
+            emailError.textContent = "";
+            passwordError.textContent = "";
+            
+            if (email.value === "") {
+                emailError.textContent = "Email is required";
+                valid = false;
+            }
+            if (password.value === "") {
+                passwordError.textContent = "Password is required";
+                valid = false;
+            }
+            if(valid) {
+                alert("Login Successful!");
+                loginBox.style.display = "none";
+            }
+        });
+    </script>
+</body>
+</html>
